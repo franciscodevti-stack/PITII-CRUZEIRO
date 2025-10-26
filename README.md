@@ -45,6 +45,9 @@ MY_SQL_DATABASE="cupcake_db"
 
 Seguindo esses passos, você terá o banco de dados configurado e pronto para uso com o projeto clicando no menu Admin do Apache no Xampp.
 
+Verifique se tudo está funcionando corretamente acessando a seguinte URL no navegador:
+
+<http://localhost/site-cupcake/>
 
 ### Informações Adicionais
 
