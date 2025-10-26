@@ -61,14 +61,14 @@ Verifique se tudo está funcionando corretamente acessando a seguinte URL no nav
 ## Utils
 
 - **História de usuários**: [histórias](./documentacoes/historia_de_usuario.pdf)
-- **Diagrama de banco de dados**: [imagem](./documentacoes/diagrama_de_banco_de_dados.jpg)
-- **Diagrama de implantação**: [imagem](./documentacoes/diagrama_de_implantacao.jpg)
-- **Diagrama de caso de uso**: [imagem](./documentacoes/caso_de_uso.jpg)
+- **Diagrama de banco de dados**: [imagem](./documentos/diagrama_de_banco_de_dados.jpg)
+- **Diagrama de implantação**: [imagem](./documentos/diagrama_de_implantacao.jpg)
+- **Diagrama de caso de uso**: [imagem](./documentos/caso_de_uso.jpg)
 
 - ## Imagens
 
 - **Loja:**:
-- ![Loja](./documentacoes/loja.jpg)
+- ![Loja](./documentos/loja.jpg)
 
 - - **Painel de Admin:**
-- ![Painel de Admin](./documentacoes/admin.jpg)
+- ![Painel de Admin](./documentos/admin.jpg)
