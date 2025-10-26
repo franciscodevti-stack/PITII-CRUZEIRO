@@ -49,7 +49,7 @@ Verifique se tudo está funcionando corretamente acessando a seguinte URL no nav
 
 <http://localhost/site-cupcake/>
 
-### Informações Adicionais
+### Informações Adicionais 
 
 - **Link da Solução em Funcionamento:** [cupcake-site](https://mundodocupcake.ct.ws/)
 - **Usuário DEMO ADMIN**: `admin` / `admin`
