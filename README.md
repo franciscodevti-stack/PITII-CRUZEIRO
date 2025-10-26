@@ -1,4 +1,4 @@
-# PITII-CRUZEIRO
+# Projeto Fullstack: Projeto integrador transdiciplinar 2
 
 Este projeto tem como objetivo desenvolver um site de vendas de Cupcakes
 
