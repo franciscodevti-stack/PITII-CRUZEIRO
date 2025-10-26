@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/10/2025 às 01:08
+-- Tempo de geração: 26/10/2025 às 15:17
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,9 +40,10 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `session_id`, `product_name`, `price`, `quantity`) VALUES
-(2, 'admin', 'Cupcake de Chocolate', 5.00, 1),
 (3, 'admin', 'Cupcake de Baunilha', 4.50, 1),
-(4, 'admin', 'Cupcake de Baunilha', 4.50, 1);
+(4, 'admin', 'Cupcake de Baunilha', 4.50, 1),
+(17, 'admin', 'Cupcake chapéu de bruxa', 5.00, 1),
+(18, 'admin', 'Cupcake Homem Aranha', 6.00, 4);
 
 -- --------------------------------------------------------
 
@@ -65,7 +66,8 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`id`, `user_id`, `items`, `total`, `status`, `created_at`) VALUES
 (1, 2, 'Cupcake de Chocolate x1, Cupcake de Baunilha x1', 9.50, 'aprovado', '2025-10-25 16:21:17'),
-(2, 2, 'Cupcake de Chocolate x5', 25.00, 'pendente', '2025-10-25 16:41:07');
+(2, 2, 'Cupcake de Chocolate x5', 25.00, 'pendente', '2025-10-25 16:41:07'),
+(3, 4, 'Cupcake chapéu de bruxa x3, Cupcake universo x2, Cupcake Star Wars x1, Cupcake Homem Aranha x2', 42.00, 'pendente', '2025-10-26 01:48:13');
 
 -- --------------------------------------------------------
 
@@ -111,7 +113,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `role`) VALUES
 (1, 'admin', '$2y$10$ydONxZJerNomGMI9vsIWaOiKB7pTP7o6Zz12BpnJ48lKOlh5OvWjO', '2025-10-25 16:03:36', 'admin'),
 (2, 'Mariana', '$2y$10$CxtTFTiGWX7y6zY./9OaROijH4IunN1EhfJpzrL0JuyL5ppJ7ZzpW', '2025-10-25 16:20:32', 'user'),
-(3, 'alex', '$2y$10$dm29BiDZGrpcdJOhu/8DcOxBXhiWYVOsoMsNSEnM6u0JUHsCpBQ26', '2025-10-25 19:19:36', 'user');
+(3, 'alex', '$2y$10$dm29BiDZGrpcdJOhu/8DcOxBXhiWYVOsoMsNSEnM6u0JUHsCpBQ26', '2025-10-25 19:19:36', 'user'),
+(4, 'Francisco', '$2y$10$imROfiDu4lkKFqQnkKlZnO0MWZb925LUBaJxPxlpmvJGrAQi4YT6G', '2025-10-25 23:48:44', 'user');
 
 --
 -- Índices para tabelas despejadas
@@ -151,13 +154,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de tabela `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `products`
@@ -169,7 +172,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para tabelas despejadas

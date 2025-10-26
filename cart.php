@@ -49,6 +49,7 @@ $items_str = implode(', ', $items);
         </nav>
     </header>
     <main>
+        <h2>Simulação de pagamento</h2>
         <div id="cart-items">
             <?php
             $result->data_seek(0); // Reset result pointer
@@ -57,8 +58,10 @@ $items_str = implode(', ', $items);
             }
             ?>
         </div>
+        <h3>Pague com Qr Code e finalize seu pedido ou entre em contato.</h3>
+        <img src="./images/qrcode.jpg"  style="width:200px">
+        <a href="https://wa.me/551199999999?text=Olá, tenho uma dúvida!" target="_blank"><img src="./images/wpp.png" style="width:200px"></a>
         <p>Total: R$ <span id="total"><?php echo number_format($total, 2); ?></span></p>
-        <button onclick="clearCart()">Limpar Carrinho</button>
         <?php if ($total > 0): ?>
             <button onclick="checkout()">Finalizar Pedido</button>
         <?php endif; ?>
